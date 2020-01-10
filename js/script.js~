@@ -1,0 +1,34 @@
+﻿/*
+	Fichier de définition des JavaScripts
+	Lycée Louis Pasteur Hénin-Beaumont
+	Modifié le 9 Septembre 2014 par Pascal LUCAS
+*/
+
+	// Déclaration des variables Globales
+	var variableGlobale;  // Description de la variable
+
+	
+	// Fonctions d'initialisations diverses
+	var init = function() {         // Javascript exécuté à l'ouverture de la page
+		
+	}
+	
+	// Fonction de mise en place des abonnements
+	var declarationAbonnements = function() {
+			//document.getElementById('numId').addEventListener("click",function() {fonctionAbonnee();} );   // Declaration de l'abonnement
+	}
+	// On ne provoque l'appel à la fonction declarationAbonnements() qu'après le chargement complet de la page
+	// Le chargement de la page provoque un événement "load"
+	// En attendant la fin du chargement on est certain que tous les éléments ont été créés avant de mettre en place les abonnements
+	window.addEventListener("load", declarationAbonnements);
+	window.addEventListener("load", init);
+
+	// Définition des fonctions appelées lors des événements
+	var fonctionAbonnee = function() {
+		// Code de la fonction abonnée
+	}
+
+	// Définition des autres fonctions 
+	var autreFonction = function(parametre1,parametre2) {
+		// Code de la fonction 
+	}
